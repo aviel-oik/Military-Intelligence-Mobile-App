@@ -234,20 +234,35 @@ body{
    opacity: 0.8;
 }
 #text{
-    justify-self: center; /* centre horizontalement */
-  align-self: center;   /* centre verticalement */
+    justify-self: center; 
+  align-self: center;
 }
 
 
 
 
 .footer{
-
-   background-color: #D99D96; 
+   background-color: #0e0d0d; 
    grid-row-start: 6;
    grid-column-start: 1;
+   color: #c4c3c3;
 
    grid-row-end: 7;
    grid-column-end: 5;
    
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 5px;
+}
+.Dashboard{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.Feed{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.Brief{
+    grid-column-start: 3;
+    grid-column-end: 4;
 }
