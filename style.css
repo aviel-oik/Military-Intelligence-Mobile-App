@@ -1,0 +1,188 @@
+body{
+    height: 100vh;
+    background-color: #0c0c11;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.all-page {
+   display: grid; 
+
+   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   
+   gap: 0px;
+   height: 100%;
+   
+}
+  
+#item-0 {
+
+   margin-left: 50%;
+   background-color: #95B677; 
+   grid-row-start: 1;
+   grid-column-start: 1;
+
+   grid-row-end: 2;
+   grid-column-end: 2;
+}
+#item-1 {
+
+   background-color: #D5B6EF; 
+   grid-row-start: 1;
+   grid-column-start: 2;
+
+   grid-row-end: 2;
+   grid-column-end: 4;
+   
+}
+#item-2 {
+
+   background-color: #6A79BD; 
+   grid-row-start: 1;
+   grid-column-start: 4;
+
+   grid-row-end: 2;
+   grid-column-end: 5;
+   
+}
+#item-3 {
+
+   background-color: #C559BC; 
+   grid-row-start: 2;
+   grid-column-start: 1;
+
+   grid-row-end: 3;
+   grid-column-end: 3;
+   
+}
+#item-4 {
+
+   background-color: #565686; 
+   grid-row-start: 2;
+   grid-column-start: 3;
+
+   grid-row-end: 3;
+   grid-column-end: 5;
+   
+}
+#item-5 {
+
+   background-color: #AB96E6; 
+   grid-row-start: 3;
+   grid-column-start: 1;
+
+   grid-row-end: 4;
+   grid-column-end: 2;
+   
+}
+#item-6 {
+
+   background-color: #DAEC9C; 
+   grid-row-start: 3;
+   grid-column-start: 2;
+
+   grid-row-end: 4;
+   grid-column-end: 3;
+   
+}
+#item-7 {
+
+   background-color: #E7D5D5; 
+   grid-row-start: 3;
+   grid-column-start: 3;
+
+   grid-row-end: 4;
+   grid-column-end: 4;
+   
+}
+#item-8 {
+
+   background-color: #797BAF; 
+   grid-row-start: 3;
+   grid-column-start: 4;
+
+   grid-row-end: 4;
+   grid-column-end: 5;
+   
+}
+#item-9 {
+
+   background-color: #CCD896; 
+   grid-row-start: 4;
+   grid-column-start: 1;
+
+   grid-row-end: 5;
+   grid-column-end: 2;
+   
+}
+#item-10 {
+
+   background-color: #C5EBD7; 
+   grid-row-start: 4;
+   grid-column-start: 2;
+
+   grid-row-end: 5;
+   grid-column-end: 3;
+   
+}
+#item-11 {
+
+   background-color: #F9AE99; 
+   grid-row-start: 4;
+   grid-column-start: 3;
+
+   grid-row-end: 5;
+   grid-column-end: 4;
+   
+}
+#item-12 {
+
+   background-color: #D8D597; 
+   grid-row-start: 4;
+   grid-column-start: 4;
+
+   grid-row-end: 5;
+   grid-column-end: 5;
+   
+}
+#item-13 {
+
+   background-color: #5A8F75; 
+   grid-row-start: 5;
+   grid-column-start: 1;
+
+   grid-row-end: 6;
+   grid-column-end: 5;
+   
+}
+#item-14 {
+
+   background-color: #D99D96; 
+   grid-row-start: 6;
+   grid-column-start: 1;
+
+   grid-row-end: 7;
+   grid-column-end: 2;
+   
+}
+#item-15 {
+
+   background-color: #DDB75E; 
+   grid-row-start: 6;
+   grid-column-start: 2;
+
+   grid-row-end: 7;
+   grid-column-end: 4;
+   
+}
+#item-16 {
+
+   background-color: #79E89D; 
+   grid-row-start: 6;
+   grid-column-start: 4;
+
+   grid-row-end: 7;
+   grid-column-end: 5;
+   
+}
