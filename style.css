@@ -7,66 +7,108 @@ body{
 
 .all-page {
    display: grid; 
-
-   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-rows: auto auto auto auto auto auto;
    grid-template-columns: 1fr 1fr 1fr 1fr;
-   
-   gap: 0px;
+   gap: 10px;
    height: 100%;
-   
 }
-  
-#item-0 {
 
-   margin-left: 50%;
-   background-color: #95B677; 
+.header {
    grid-row-start: 1;
    grid-column-start: 1;
-
-   grid-row-end: 2;
-   grid-column-end: 2;
-}
-#item-1 {
-
-   background-color: #D5B6EF; 
-   grid-row-start: 1;
-   grid-column-start: 2;
-
-   grid-row-end: 2;
-   grid-column-end: 4;
-   
-}
-#item-2 {
-
-   background-color: #6A79BD; 
-   grid-row-start: 1;
-   grid-column-start: 4;
-
    grid-row-end: 2;
    grid-column-end: 5;
-   
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10px;
+   height: 30%;
+   background-color: #000000 ;
+   color: #00dd39;
+   border: 0.5px solid #3b3b3b;
+   border-radius: 10px;
 }
-#item-3 {
+#header-left{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    color: #000000;
+    background-color: #00dd39;
+    width: 5%;
+    margin-top: 2%;
+    margin-bottom: 90%;
+    margin-right: 100%;
+    border: 0.5px solid #3b3b3b;
+    border-radius: 50px;
+}
+#header-center{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+#header-right{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    border: 0.5px solid #00dd39;
+    border-radius: 10px;
+    height: 5.5%;
+    width: 40%;
+}
 
+
+.body-center {
+   border: 0.5px solid #3b3b3b;
+   border-radius: 10px;
+   background-color: #000000;
    background-color: #C559BC; 
    grid-row-start: 2;
    grid-column-start: 1;
 
    grid-row-end: 3;
-   grid-column-end: 3;
-   
-}
-#item-4 {
-
-   background-color: #565686; 
-   grid-row-start: 2;
-   grid-column-start: 3;
-
-   grid-row-end: 3;
    grid-column-end: 5;
    
+  overflow: hidden;
+  height: 100%;
+  background: radial-gradient(hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 1)),
+    linear-gradient(90deg, dimgrey 1px, transparent 1px), 
+    linear-gradient(dimgrey 1px, grey 1px);
+  background-size: 100%, 2px 1px, 1px 2px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-#item-5 {
+.radar, .sweep { position:relative; }
+.radar {
+  
+  overflow: hidden; 
+  top: 50%; left: 50%;
+  margin: -117px;
+  width: 248px; height: 248px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.5),
+    inset 0 0 0 1px hsla(0, 0%, 100%, 0.15);
+  background: 
+    repeating-radial-gradient(transparent 0 23px, #287a33 24px 26px, #0000 27px), 
+    linear-gradient(transparent 49.75%, #0e4c42 0 50.25%, transparent 0) 50% no-repeat,
+    linear-gradient(90deg, transparent 49.75%, #0e4c42 0 50.25%, transparent 0) 50% no-repeat,
+    linear-gradient(#333, #111);
+  background-size: 100%, 218px 218px, 218px 218px, 100%;
+}
+.sweep {
+  box-sizing: border-box;
+  top: 16px; left: 16px;
+  border-right: solid 1px hsla(145, 50%, 40%, .3);
+  width: 108px; height: 108px;
+  border-radius: 100% 0 0 0;
+  transform-origin: 100% 100%;
+  background: linear-gradient(50deg, rgba(34, 34, 34, 0) 56%, hsla(145, 50%, 40%, 1));
+  animation: sweep 5s infinite linear;
+}
+@keyframes sweep { to { transform: rotate(360deg); } }
+
+.info{
+    color: green;
+}
+
+
+.button-left {
 
    background-color: #AB96E6; 
    grid-row-start: 3;
@@ -74,9 +116,15 @@ body{
 
    grid-row-end: 4;
    grid-column-end: 2;
-   
+
+   border: 1px solid #3b3b3b;
+   border-radius: 10px;
+   background-color: #000000;
+   color: #c4c3c3;
+   height: 70%;
+   width: 40%;   
 }
-#item-6 {
+.button-center {
 
    background-color: #DAEC9C; 
    grid-row-start: 3;
@@ -85,8 +133,14 @@ body{
    grid-row-end: 4;
    grid-column-end: 3;
    
+      border: 1px solid #3b3b3b;
+   border-radius: 10px;
+   background-color: #000000;
+   color: #c4c3c3;
+   height: 70%;
+   width: 40%;   
 }
-#item-7 {
+.button-right {
 
    background-color: #E7D5D5; 
    grid-row-start: 3;
@@ -94,29 +148,31 @@ body{
 
    grid-row-end: 4;
    grid-column-end: 4;
+
+      border: 1px solid #3b3b3b;
+   border-radius: 10px;
+   background-color: #000000;
+   color: #c4c3c3;
+   height: 70%;
+   width: 40%;   
    
 }
-#item-8 {
 
-   background-color: #797BAF; 
-   grid-row-start: 3;
-   grid-column-start: 4;
-
-   grid-row-end: 4;
-   grid-column-end: 5;
-   
-}
-#item-9 {
-
+.card-1 {
    background-color: #CCD896; 
    grid-row-start: 4;
    grid-column-start: 1;
 
    grid-row-end: 5;
    grid-column-end: 2;
+
+   border: 1px solid #3b3b3b;
+   border-radius: 10px;
+   background-color: #000000;
+   color: #c4c3c3;
    
 }
-#item-10 {
+.card-2 {
 
    background-color: #C5EBD7; 
    grid-row-start: 4;
@@ -124,9 +180,14 @@ body{
 
    grid-row-end: 5;
    grid-column-end: 3;
+
+      border: 1px solid #3b3b3b;
+   border-radius: 10px;
+   background-color: #000000;
+   color: #c4c3c3;
    
 }
-#item-11 {
+.card-3 {
 
    background-color: #F9AE99; 
    grid-row-start: 4;
@@ -134,9 +195,14 @@ body{
 
    grid-row-end: 5;
    grid-column-end: 4;
+
+      border: 1px solid #3b3b3b;
+   border-radius: 10px;
+   background-color: #000000;
+   color: #c4c3c3;
    
 }
-#item-12 {
+.card-4 {
 
    background-color: #D8D597; 
    grid-row-start: 4;
@@ -144,43 +210,42 @@ body{
 
    grid-row-end: 5;
    grid-column-end: 5;
+
+      border: 1px solid #3b3b3b;
+   border-radius: 10px;
+   background-color: #000000;
+   color: #c4c3c3;
    
 }
-#item-13 {
-
+.red-button {
+   
    background-color: #5A8F75; 
    grid-row-start: 5;
    grid-column-start: 1;
 
    grid-row-end: 6;
    grid-column-end: 5;
-   
+
+   border: 1px solid #3b3b3b;
+   border-radius: 10px;
+   background-color: #000000;
+   color: #ff0000;
+   background-color: #3a2222;
+   opacity: 0.8;
 }
-#item-14 {
+#text{
+    justify-self: center; /* centre horizontalement */
+  align-self: center;   /* centre verticalement */
+}
+
+
+
+
+.footer{
 
    background-color: #D99D96; 
    grid-row-start: 6;
    grid-column-start: 1;
-
-   grid-row-end: 7;
-   grid-column-end: 2;
-   
-}
-#item-15 {
-
-   background-color: #DDB75E; 
-   grid-row-start: 6;
-   grid-column-start: 2;
-
-   grid-row-end: 7;
-   grid-column-end: 4;
-   
-}
-#item-16 {
-
-   background-color: #79E89D; 
-   grid-row-start: 6;
-   grid-column-start: 4;
 
    grid-row-end: 7;
    grid-column-end: 5;
